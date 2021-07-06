@@ -1,0 +1,33 @@
+body {
+    background-color: silver;
+    
+}
+h1 {
+    color: brown;
+    
+}
+h1 { text-align: center;
+}
+
+h2 {text-align: center;
+}
+
+h2 {text-decoration-line: underline ;}
+
+ body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url(IMG_4069.PNG) ;
+    background-size: 100%;
+    vertical-align: top; 
+    padding: 25px 10px 10px 10px;
+    height:100%;
+    box-shadow: 2px 2px 2px;
+ }
+
+ p {
+     font-size: larger;
+ }
+  
+ li {
+     font-size: larger;
+ }
