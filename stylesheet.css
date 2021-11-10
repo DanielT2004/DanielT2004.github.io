@@ -39,7 +39,7 @@ nav {
     cursor: pointer;
 }
 span{
-color: olivedrab;
+color: rgb(104, 139, 34);
 }
 .navbar ul{
     display: flex;
@@ -95,7 +95,7 @@ color: olivedrab;
 .about{
     width: 100%;
     height: auto;
-    padding: 150px 0px;
+    padding: 10px 0px;
     background-color: 	#fff1d1;
 }
 .about img{
@@ -111,19 +111,19 @@ width: 600px;
 
 .MainContainer{
     /* width: 1330px;
-    max-width: 95%;  */
+    max-width: 95%; */
     position:static;
     width: 100%;
     display: flex;
     align-items: center; 
     justify-content: space-around;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1150px) {
     .MainContainer {
       display: block;
         width: 100%;
         align-items: center;
-
+        padding-left: 120px;
     
     }
   }
@@ -133,8 +133,11 @@ width: 600px;
     padding: 50px;
 }
 .image_overlay{
+   
     position: absolute;
     display: block;
+    height: 50%;
+    width: 50%;
     right: 53.5%;
     width: 600px;
     height: 450px;
@@ -146,7 +149,7 @@ width: 600px;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity .25s;
+    transition: opacity .25s; 
 }
 .image_overlay > *{
     transform: translateY(20px);
@@ -202,9 +205,92 @@ text-transform: capitalize;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-
-
+}
+.hobbies{
+background-color: #fff1d1;
+padding: 20px;
+position:static;
+width: 100%;
+/* display: flex;
+flex-direction:row; */
+align-items: center; 
+justify-content: space-around;
 }
 
+.title{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 60px; 
+    padding-bottom: 60px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(104, 139, 34) 50%, white ) ;
+    background-size: 100% 200%;
+    transition: all .6s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(104, 139, 34);
+}
+.box p{
+font-size: 19px;
+margin-bottom: 40px;
+line-height: 25px;
+}
+.heading{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.box img{  
+    width: 80px;
+    height: 80px;
+}
+.body_pics{
+    margin-top: 180px;
+    display:flex;
+    justify-content:space-evenly;
+}
+@media screen and (max-width: 850px) {
+    .row{
+        display: block;
+        padding-left: 200px;
+    }
+}
 
+.BSU_pic img{
+width: 500px;
+height: auto;
+}
+.Basketball_pic img{
+
+width: 400px;
+height:auto;
+}
+@media screen and (max-width: 950px) {
+    .body_pics{
+        display: block;
+        width: 100%;
+        /* center my images */
+        padding-left: 190px;
+    }
+}
+purp{
+    color: purple;
+}
 
