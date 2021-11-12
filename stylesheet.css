@@ -208,7 +208,7 @@ text-transform: capitalize;
 }
 .hobbies{
 background-color: #fff1d1;
-padding: 20px;
+/* padding: 20px; */
 position:static;
 width: 100%;
 /* display: flex;
