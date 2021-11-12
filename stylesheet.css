@@ -258,6 +258,7 @@ line-height: 25px;
     margin-bottom: 40px;
 }
 .box img{  
+    padding-top: 20px;
     width: 80px;
     height: 80px;
 }
@@ -265,6 +266,9 @@ line-height: 25px;
     margin-top: 180px;
     display:flex;
     justify-content:space-evenly;
+}
+.box h1{
+    text-align: center;
 }
 @media screen and (max-width: 850px) {
     .row{
