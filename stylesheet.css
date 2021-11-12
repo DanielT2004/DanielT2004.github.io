@@ -238,7 +238,7 @@ justify-content: space-around;
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(104, 139, 34) 50%, white ) ;
+    background: linear-gradient(to top, rgb(104, 139, 34) 50%, white 50% ) ;
     background-size: 100% 200%;
     transition: all .6s;
 }
