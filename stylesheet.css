@@ -286,6 +286,10 @@ height: auto;
 width: 400px;
 height:auto;
 }
+.YEOC_pic img{
+    width: 450px;
+    height: auto;
+}
 @media screen and (max-width: 950px) {
     .body_pics{
         display: block;
@@ -294,6 +298,7 @@ height:auto;
         padding-left: 190px;
     }
 }
+
 purp{
     color: purple;
 }
