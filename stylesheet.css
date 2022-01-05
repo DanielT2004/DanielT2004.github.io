@@ -5,8 +5,10 @@
     scroll-behavior:smooth;
     box-sizing:border-box;
 }
-
-
+span{
+    color: rgb(104, 139, 34);
+    }
+/* Navbar */
 .navbar{   
     background-image: url("tree_background\ .jpeg");
     background-repeat: no-repeat;
@@ -15,34 +17,25 @@
     height: 100vh;  
 }
 
-
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center; 
     min-height: 8vh; 
     }
-
 .logo{
     color:white;
     font-size: 35px;
     letter-spacing: 3px;
     cursor: pointer;
 }
-span{
-color: rgb(104, 139, 34);
-}
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 40%;
-    
     }
-    
     .nav-links li {
         list-style: none;    
-    
     }
     .nav-links a {
         font-family: century;
@@ -51,14 +44,12 @@ color: rgb(104, 139, 34);
         text-decoration: none;
         color:white;
         padding: 8px 25px; 
-        transition: all .5s ease;
-        
+        transition: all .5s ease;   
     }
     /* hover effect */
     .nav-links a{
        display: inline-block;
-       position: relative;
-       
+       position: relative;   
     }
     .nav-links a:after {
         content: '';
@@ -77,7 +68,7 @@ color: rgb(104, 139, 34);
         transform-origin: bottom left;
 
     }
-    /* mobil function */
+    /* mobil menufunction */
     .burger{
         display: none;
     }
@@ -90,33 +81,39 @@ color: rgb(104, 139, 34);
     .intro {
         display: flex;
         flex-direction: column;
-       
         align-items: left;
         position: absolute;
-        
-        top: 42%;
-        left: 30%
-        
+        top: 25%;
+        left: 30%;    
+        animation-name:pop;
+        animation-duration: .8s;
+        animation-fill-mode: forwards;
     }
-    
-    .headings{
+    /* center "Daniel T" */
+    .headName{
         font-family: 'Courier New', Courier, monospace ;
         font-size: 4rem;
         text-align:center;
-        margin: 40px 0px;
-        color:white;
+        position: relative;     
+        color:white;    
+        transition: 1s ease;
     }
-    
+    .headName:hover{
+        letter-spacing: 20px;
+    }
+    @keyframes pop {
+        from {transform: translateY(0)}
+        to {transform: translateY(-455px)}
 
+      }
+      
+  
     /* about section*/
-
-
 
 .about-text{
     width: 520px;  
     padding: 80px;
 }
-
 
 .MainContainer{
     /* width: 1330px;
@@ -156,7 +153,7 @@ color: rgb(104, 139, 34);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1;
     width: 100%;
-    transition: .5s ease;
+    transition: 1s ease;
     opacity:0;
     color: white;
     font-size: 20px;
@@ -194,6 +191,10 @@ color: rgb(104, 139, 34);
 .imgage_discription{
     font-size: 1.25em;
     margin-top: .5em;
+}
+
+.about-text{
+    width: 45%;
 }
 
 .about-text h2{
@@ -417,6 +418,14 @@ purp{
 }
 }
 @media screen and (max-width: 980px) {
+    /* heading "daniel T */
+    .intro{
+        top: 48%
+    }
+    .headName{
+        font-size: 3rem;
+        margin: -1800px 0px;
+    }
     /* about text */
     .MainContainer {
         flex-direction: column;
@@ -466,10 +475,6 @@ height: auto;
     width: 800px;
 }
 /* navbar */
- body{
- overflow-x: hidden;
- }
-
 
 .nav-links{
     position: absolute;
@@ -482,20 +487,14 @@ height: auto;
     align-items: center;
     width: 50%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-}
-.nav-links li{
-    
+    transition: transform 0.5s ease-in;  
 }
 .burger{
     display:block;
     cursor: pointer;
 }
-.headings{
-    font-size: 2rem;
 }
 
-}
 .nav-active{
     transform: translateX(0%);
 }
@@ -521,7 +520,11 @@ height: auto;
     
     transform: rotate(45deg) translate(-5px, -6px)
 }
-.remove .headings{
-    display: none;
-    
+.remove .headName{
+    display: none
+}
+
+.wrapper{
+    overflow-x: hidden;
+    position: relative;
 }
