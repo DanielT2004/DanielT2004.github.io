@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="stylesheet.css"  />
 </head>
 <body>
-  <div  class = "navbar">
+  <div class="navbar">
     <nav>
-      <h4 class = "brand" > Daniel Tadesse</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about-page">About Me</a></li>
-          <li><a href="#hobbies-page">Hobbies</a></li>
-          <li><a href="#photos">Photos</a></li>
-          
-        </ul>
-      </nav>
-</div>
-  <div class = "intro">
-    <h2 class = "headings">Daniel Tadesse </h2>
+      <h4 class="logo"> Daniel Tadesse</h4>
+      <ul class = "nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-page">About Me</a></li>
+        <li><a href="#hobbies-page">Hobbies</a></li>
+        <li><a href="#photos">Photos</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"> </div>
+        <div class="line2"> </div>
+        <div class="line3"> </div>
+      </div>
+    </nav>
+
+  </div>
+
+  
+
+  <div class="intro">
+    <h2 class="headings">Daniel Tadesse </h2>
   </div>
 
 <!-- ABOUT SECTION -->
@@ -132,6 +140,7 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 <script>
+  // slideshow script
   var slideIndex = 1;
   showSlides(slideIndex);
   
@@ -158,6 +167,29 @@
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
   }
+
+// nav bar script
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const intro = document.querySelector('.intro');
+ 
+  burger.addEventListener ('click', ()=> {
+    // toggle nav
+    nav.classList.toggle('nav-active');
+     // animate links
+    
+     burger.classList.toggle('toggle');
+     intro.classList.toggle('remove');
+
+    }); 
+ 
+
+
+
+}
+navSlide();
+
   </script>
 
 </div>
