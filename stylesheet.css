@@ -521,7 +521,15 @@ height: auto;
     transform: rotate(45deg) translate(-5px, -6px)
 }
 .remove .headName{
-    display: none
+    animation-name: introfade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes introfade {
+    from{opacity: 1;}
+    to{opacity: 0}
 }
 
 .wrapper{
