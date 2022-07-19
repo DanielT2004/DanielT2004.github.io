@@ -1,2 +1,5 @@
 # DanielT2004.github.io
-Personal Website made with html, css, and Javascript 
+Enjoy my personal website made with html, css, and Javascript.
+#fun facts about me
+#my hobbies
+#SlideShow
